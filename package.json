@@ -1,0 +1,31 @@
+{
+  "name": "@bly-th/eleventy",
+  "version": "1.0.0",
+  "description": "An eleventy starter framework.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bly-th/eleventy"
+  },
+  "scripts": {
+    "dev": "npm run serve",
+    "serve": "ELEVENTY_ENV=development npx eleventy --serve",
+    "production": "npx eleventy"
+  },
+  "bin": {
+    "blyth": "node_modules/@bly-th/css/src/index.js"
+  },
+  "blyth": {
+    "tokensOutputPath": "src/_includes/css/tokens.css",
+    "utilityOutputPath": "src/_includes/css/utility"
+  },
+  "author": "Ryan Gittings",
+  "license": "GPL-2.0 AND MIT",
+  "homepage": "https://github.com/bly-th/eleventy",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@bly-th/css": "^0.1.5",
+    "clean-css": "^4.2.3",
+    "node-fetch": "^2.6.0"
+  },
+  "dependencies": {}
+}
