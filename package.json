@@ -11,11 +11,8 @@
     "serve": "ELEVENTY_ENV=development npx eleventy --serve",
     "production": "npx eleventy"
   },
-  "bin": {
-    "blyth": "node_modules/@bly-th/css/src/index.js"
-  },
   "blyth": {
-    "tokensOutputPath": "src/_includes/css/tokens.css",
+    "tokensOutputPath": "src/_includes/css/utility/tokens.css",
     "utilityOutputPath": "src/_includes/css/utility"
   },
   "author": "Ryan Gittings",
