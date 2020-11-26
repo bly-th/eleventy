@@ -1,10 +1,9 @@
-const CleanCSS = require("clean-css");
+// Import filters
+const cssMinFilter = require('./src/filters/css-min.js');
 
-module.exports = config => {
-  // Minify css
-  config.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
+module.exports = (config) => {
+  // Add filters
+  config.addFilter('cssmin', cssMinFilter);
 
   // Pass through
   config.addPassthroughCopy('./src/img/');
@@ -23,8 +22,8 @@ module.exports = config => {
   return {
     dir: {
       input: 'src',
-      output: 'dist'
+      output: 'dist',
     },
-    passthroughFileCopy: true
+    passthroughFileCopy: true,
   };
 };
