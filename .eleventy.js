@@ -1,7 +1,15 @@
+// Import plugins
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const pluginRss = require('@11ty/eleventy-plugin-rss');
+
 // Import filters
 const cssMinFilter = require('./src/filters/css-min.js');
 
 module.exports = (config) => {
+  // Add plugins
+  config.addPlugin(eleventyNavigationPlugin);
+  config.addPlugin(pluginRss);
+
   // Add filters
   config.addFilter('cssmin', cssMinFilter);
 
