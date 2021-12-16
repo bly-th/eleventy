@@ -1,0 +1,43 @@
+body {
+  font-family: var(--font-base);
+  font-size: var(--text-400);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-extra-tight);
+}
+
+h1 {
+  font-size: var(--text-900);
+}
+
+h2 {
+  font-size: var(--text-800);
+}
+
+h3 {
+  font-size: var(--text-600);
+}
+
+h4 {
+  font-size: var(--text-500);
+}
+
+h5 {
+  font-size: var(--text-400);
+}
+
+p,
+ul {
+  margin-bottom: var(--size-400);
+}
+
+a {
+  color: currentColor;
+}

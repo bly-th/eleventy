@@ -1,11 +1,18 @@
-{% set css %}{% endset %}
+{%- set css -%}
+  {% include '../css/utility/reset.css' %}
+  {% include '../css/utility/space-scale.css' %}
+  {% include '../css/utility/tokens.css' %}
+  {% include '../css/utility/type-scale.css' %}
+
+  {% include '../css/global/type.css' %}
+{%- endset -%}
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% include 'partials/meta.njk' %}
+    {%- include 'partials/meta.njk' -%}
     <script>document.documentElement.classList.remove('no-js');</script>
     <style>
       {{ css | cssmin | safe }}
