@@ -1,0 +1,12 @@
+---
+permalink: /css/main.css
+---
+{%- set css -%}
+  {% include '../_includes/css/utility/reset.css' %}
+  {% include '../_includes/css/utility/space-scale.css' %}
+  {% include '../_includes/css/utility/tokens.css' %}
+  {% include '../_includes/css/utility/type-scale.css' %}
+
+  {% include '../_includes/css/global/type.css' %}
+{%- endset -%}
+{{ css | cssmin | safe }}
