@@ -66,6 +66,7 @@ module.exports = {
         loose: '1.7',
       },
       property: 'line-height',
+      variable: true,
     },
     measure: {
       items: {
