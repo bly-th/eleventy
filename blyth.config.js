@@ -50,6 +50,10 @@ module.exports = {
       property: 'font-family',
       variable: true,
     },
+    'flow-space': {
+      items: theme.sizeScale,
+      property: '--flow-space',
+    },
     'gap-top': {
       items: theme.sizeScale,
       property: 'margin-top',
