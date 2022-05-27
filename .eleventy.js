@@ -17,14 +17,14 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('./src/img/');
   eleventyConfig.addPassthroughCopy('./src/fonts/');
   eleventyConfig.addPassthroughCopy('./src/js/');
-  eleventyConfig.addPassthroughCopy('./src/apple-touch-icon-57x57.png');
-  eleventyConfig.addPassthroughCopy('./src/apple-touch-icon-72x72.png');
-  eleventyConfig.addPassthroughCopy('./src/apple-touch-icon-76x76.png');
-  eleventyConfig.addPassthroughCopy('./src/apple-touch-icon-114x114.png');
-  eleventyConfig.addPassthroughCopy('./src/apple-touch-icon-152x152.png');
-  eleventyConfig.addPassthroughCopy('./src/apple-touch-icon-180x180.png');
+  eleventyConfig.addPassthroughCopy('./src/android-chrome-192x192.png');
+  eleventyConfig.addPassthroughCopy('./src/android-chrome-384x384.png');
   eleventyConfig.addPassthroughCopy('./src/apple-touch-icon.png');
+  eleventyConfig.addPassthroughCopy('./src/favicon-16x16.png');
+  eleventyConfig.addPassthroughCopy('./src/favicon-32x32.png');
   eleventyConfig.addPassthroughCopy('./src/favicon.ico');
+  eleventyConfig.addPassthroughCopy('./src/safari-pinned-tab.svg');
+  eleventyConfig.addPassthroughCopy('./src/site.webmanifest');
   eleventyConfig.addPassthroughCopy('./src/robots.txt');
 
   return {
