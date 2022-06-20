@@ -8,7 +8,8 @@ sitemapIgnore: true
   {% include '../_includes/css/utility/tokens.css' %}
   {% include '../_includes/css/utility/type-scale.css' %}
 
-  {% include '../_includes/css/global/flow.css' %}
   {% include '../_includes/css/global/type.css' %}
+
+  {% include '../_includes/css/utility/flow.css' %}
 {%- endset -%}
 {{ css | cssmin | safe }}
