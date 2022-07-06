@@ -2,8 +2,8 @@
 {%- set pageDesc = '' %}
 {%- set siteTitle = site.name %}
 {%- set currentUrl = site.url + page.url %}
-{%- if metaTitle %}{% set pageTitle = metaTitle %}{% endif %}
-{%- if metaDesc %}{% set pageDesc = metaDesc %}{% endif %}
+{%- if meta.title %}{% set pageTitle = meta.title %}{% endif %}
+{%- if meta.desc %}{% set pageDesc = meta.desc %}{% endif %}
 
 <title>{{ pageTitle }}</title>
 <link rel="canonical" href="{{ currentUrl }}" />
@@ -12,10 +12,10 @@
 <meta property="og:title" content="{{ pageTitle }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ currentUrl }}" />
-{% if metaDesc %}
-  <meta name="description" content="{{ metaDesc }}" />
-  <meta name="twitter:description" content="{{ metaDesc }}" />
-  <meta property="og:description" content="{{ metaDesc }}" />
+{% if pageDesc %}
+  <meta name="description" content="{{ pageDesc }}" />
+  <meta name="twitter:description" content="{{ pageDesc }}" />
+  <meta property="og:description" content="{{ pageDesc }}" />
 {%- endif %}
 {% if socialImage %}  
   <meta property="og:image" content="{{ socialImage }}" />
