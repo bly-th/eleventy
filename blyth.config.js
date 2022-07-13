@@ -1,7 +1,7 @@
 const theme = {
   breakpoints: {
     md: '48em',
-    lg: '68em',
+    lg: '64em',
   },
   colors: {
     primary: '#ff00ff',
@@ -50,17 +50,9 @@ module.exports = {
       property: 'font-family',
       variable: true,
     },
-    'flow-space': {
+    gap: {
       items: theme.sizeScale,
-      property: '--flow-space',
-    },
-    'gap-top': {
-      items: theme.sizeScale,
-      property: 'margin-top',
-    },
-    'gap-bottom': {
-      items: theme.sizeScale,
-      property: 'margin-bottom',
+      property: 'gap',
     },
     leading: {
       items: {
@@ -70,7 +62,14 @@ module.exports = {
         loose: '1.7',
       },
       property: 'line-height',
-      variable: true,
+    },
+    'mar-top': {
+      items: theme.sizeScale,
+      property: 'margin-top',
+    },
+    'mar-bottom': {
+      items: theme.sizeScale,
+      property: 'margin-bottom',
     },
     measure: {
       items: {
