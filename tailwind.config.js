@@ -77,7 +77,17 @@ module.exports = {
         }
 
         Object.keys(group).forEach(key => {
-          result += `--${prefix}-${key}: ${group[key]};`;
+          const value = group[key];
+          console.log(value);
+
+          if (typeof (value) === 'object') {
+            for (const [valKey, val] of Object.entries(value)) {
+              result += `--${prefix}-${key}-${valKey}: ${val};`;
+            }
+          } else {
+            result += `--${prefix}-${key}: ${group[key]};`;
+          }
+          
         });
       });
 
