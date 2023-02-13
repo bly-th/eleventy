@@ -9,7 +9,7 @@ h3,
 h4,
 h5 {
   margin: 0;
-  font-weight: var(--weight-bold);
+  font-weight: var(--font-bold);
   line-height: var(--leading-extra-tight);
 }
 
