@@ -1,5 +1,5 @@
 body {
-  font-family: var(--font-base);
+  font-family: var(--font-sans);
   font-size: var(--text-400);
 }
 
@@ -8,9 +8,8 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 0;
   font-weight: var(--font-bold);
-  line-height: var(--leading-extra-tight);
+  line-height: var(--leading-none);
 }
 
 h1 {
@@ -31,11 +30,6 @@ h4 {
 
 h5 {
   font-size: var(--text-400);
-}
-
-p,
-ul {
-  margin-bottom: var(--size-400);
 }
 
 a {

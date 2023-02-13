@@ -29,6 +29,11 @@ module.exports = {
       800: 'clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem)',
       900: 'clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem)'
     },
+    maxWidth: {
+      compact: '40ch',
+      long: '75ch',
+      short: '60ch',
+    },
     screens: {
       'sm': '640px',
       'md': '768px',
