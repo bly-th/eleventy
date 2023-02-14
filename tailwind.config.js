@@ -1,7 +1,5 @@
-const plugin = require('tailwindcss/plugin');
-const postcss = require('postcss');
-const postcssJs = require('postcss-js');
-
+const tailwindCSSVariables = require('@bly-th/tailwind-css-variables');
+const tailwindCustomUtilities = require('@bly-th/tailwind-custom-utilities');
 
 module.exports = {
   content: ["./src/**/*.njk"],
@@ -55,69 +53,24 @@ module.exports = {
   },
   plugins: [
     // Generates custom property values from tailwind config
-    plugin(function ({addComponents, config}) {
-      let result = '';
-
-      const currentConfig = config();
-
-      const groups = [
-        {key: 'colors', prefix: 'color'},
-        {key: 'spacing', prefix: 'size'},
-        {key: 'fontSize', prefix: 'text'},
-        {key: 'fontFamily', prefix: 'font'},
-        {key: 'fontWeight', prefix: 'font'},
-        {key: 'lineHeight', prefix: 'leading'},
-      ];
-
-      groups.forEach(({key, prefix}) => {
-        const group = currentConfig.theme[key];
-
-        if (!group) {
-          return;
-        }
-
-        Object.keys(group).forEach(key => {
-          const value = group[key];
-          console.log(value);
-
-          if (typeof (value) === 'object') {
-            for (const [valKey, val] of Object.entries(value)) {
-              result += `--${prefix}-${key}-${valKey}: ${val};`;
-            }
-          } else {
-            result += `--${prefix}-${key}: ${group[key]};`;
-          }
-          
-        });
-      });
-
-      addComponents({
-        ':root': postcssJs.objectify(postcss.parse(result))
-      });
+    tailwindCSSVariables({
+      colors: 'color',
+      spacing: 'size',
+      fontSize: 'text',
+      fontFamily: 'font',
+      fontWeight: 'font',
+      lineHeight: 'leading',
     }),
-
-    // Generates custom utility classes
-    plugin(function ({addUtilities, config}) {
-      const currentConfig = config();
-      const customUtilities = [
-        {key: 'spacing', prefix: 'flow-space', property: '--flow-space'}
-      ];
-
-      customUtilities.forEach(({key, prefix, property}) => {
-        const group = currentConfig.theme[key];
-
-        if (!group) {
-          return;
-        }
-
-        Object.keys(group).forEach(key => {
-          addUtilities({
-            [`.${prefix}-${key}`]: postcssJs.objectify(
-              postcss.parse(`${property}: ${group[key]}`)
-            )
-          });
-        });
-      });
-    })
+    tailwindCustomUtilities([
+      {
+        prefix: 'grid-min-item-size',
+        items: {
+          large: 'clamp(24rem, 30%, 100%)'
+        },
+        property: '--grid-min-item-size'
+      },
+      {key: 'spacing', prefix: 'flow-space', property: '--flow-space'},
+      {key: 'spacing', prefix: 'gutter', property: '--gutter'},
+    ])
   ]
 };
