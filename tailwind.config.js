@@ -61,8 +61,11 @@ module.exports = {
       fontWeight: 'font',
       lineHeight: 'leading',
     }),
-    tailwindCustomUtilities([
-      {key: 'spacing', prefix: 'flow-space', property: '--flow-space'}
-    ])
+    tailwindCustomUtilities({
+      spacing: {
+        name: 'flow-space',
+        property: '--flow-space',
+      },
+    })
   ]
 };
