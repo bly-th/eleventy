@@ -6,10 +6,10 @@ sitemapIgnore: true
   {% include '../_includes/css/utility/reset.css' %}
   {% include '../_includes/css/utility/tokens.css' %}
 
-  {% include '../_includes/css/global/type.css' %}
-
   {% include '../_includes/css/composition/grid.css' %}
   {% include '../_includes/css/composition/stack.css' %}
   {% include '../_includes/css/composition/flow.css' %}
+
+  {% include '../_includes/css/global/type.css' %}
 {%- endset -%}
 {{ css | cssmin | safe }}
