@@ -62,15 +62,7 @@ module.exports = {
       lineHeight: 'leading',
     }),
     tailwindCustomUtilities([
-      {
-        prefix: 'grid-min-item-size',
-        items: {
-          large: 'clamp(24rem, 30%, 100%)'
-        },
-        property: '--grid-min-item-size'
-      },
-      {key: 'spacing', prefix: 'flow-space', property: '--flow-space'},
-      {key: 'spacing', prefix: 'gutter', property: '--gutter'},
+      {key: 'spacing', prefix: 'flow-space', property: '--flow-space'}
     ])
   ]
 };
