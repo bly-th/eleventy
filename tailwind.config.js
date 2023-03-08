@@ -2,7 +2,7 @@ const tailwindCSSVariables = require('@bly-th/tailwind-css-variables');
 const tailwindCustomUtilities = require('@bly-th/tailwind-custom-utilities');
 
 module.exports = {
-  content: ["./src/**/*.njk", "./src/**/*.css"],
+  content: ["./src/**/*.njk"],
   corePlugins: {
     preflight: false,
   },
@@ -26,11 +26,6 @@ module.exports = {
       700: 'clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem)',
       800: 'clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem)',
       900: 'clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem)'
-    },
-    maxWidth: {
-      compact: '40ch',
-      long: '75ch',
-      short: '60ch',
     },
     screens: {
       'sm': '640px',
