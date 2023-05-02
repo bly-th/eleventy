@@ -13,9 +13,6 @@ module.exports = (eleventyConfig) => {
   // Add filters
   eleventyConfig.addFilter('cssmin', cssMinFilter);
 
-  // Add tailwind
-  eleventyConfig.addTemplateFormats("tailwind");
-
   // Pass through
   eleventyConfig.addPassthroughCopy('./src/img/');
   eleventyConfig.addPassthroughCopy('./src/fonts/');
