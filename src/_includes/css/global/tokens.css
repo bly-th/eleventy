@@ -47,6 +47,22 @@
   --leading-loose: 2
 }
 
+.block {
+  display: block
+}
+
+.flex {
+  display: flex
+}
+
+.grid {
+  display: grid
+}
+
+.flex-wrap {
+  flex-wrap: wrap
+}
+
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(255 84 0 / var(--tw-text-opacity))

@@ -10,7 +10,6 @@ sitemapIgnore: true
   {% include '../_includes/css/composition/flow.css' %}
 
   {% include '../_includes/css/global/type.css' %}
-
-  {% include '../_includes/css/utility/tokens.css' %}
+  {% include '../_includes/css/global/tokens.css' %}
 {%- endset -%}
 {{ css | cssmin | safe }}
