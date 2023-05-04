@@ -8,12 +8,12 @@
   },
   "scripts": {
     "dev": "npm-run-all -p dev:*",
-    "dev:css": "NODE_ENV=production npx tailwindcss -o src/_includes/css/utility/tokens.css --watch",
+    "dev:css": "NODE_ENV=production npx tailwindcss -o src/_includes/css/global/tokens.css --watch",
     "dev:11ty": "eleventy --serve --incremental",
     "production": "npx eleventy"
   },
   "blyth": {
-    "utilityOutputPath": "src/_includes/css/global",
+    "utilityOutputPath": "src/_includes/css/utility",
     "compositionOutputPath": "src/_includes/css/composition"
   },
   "author": "Ryan Gittings",
