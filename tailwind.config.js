@@ -17,7 +17,7 @@ module.exports = {
       dark: '#252525'
     },
     fontSize: {
-      // https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12
+      /* @link https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
       200: 'clamp(0.91rem, calc(0.89rem + 0.10vw), 0.96rem)',
       300: 'clamp(1.09rem, calc(1.05rem + 0.21vw), 1.20rem)',
       400: 'clamp(1.31rem, calc(1.24rem + 0.37vw), 1.50rem)',
@@ -35,7 +35,7 @@ module.exports = {
       '2xl': '1536px'
     },
     spacing: {
-      // https://utopia.fyi/space/calculator/?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l
+      /* @link https://utopia.fyi/space/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
       200: 'clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem)',
       300: 'clamp(0.69rem, calc(0.52rem + 0.85vw), 1.13rem)',
       400: 'clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem)',
