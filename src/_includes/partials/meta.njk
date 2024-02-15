@@ -2,8 +2,10 @@
 {%- set pageDesc = '' %}
 {%- set siteTitle = site.name %}
 {%- set currentUrl = site.url + page.url %}
+{%- set socialImage = ''%}
 {%- if meta.title %}{% set pageTitle = meta.title %}{% endif %}
 {%- if meta.desc %}{% set pageDesc = meta.desc %}{% endif %}
+{%- if meta.socialImage %}{% set socialImage = meta.socialImage %}{% endif %}
 
 <title>{{ pageTitle }}</title>
 <link rel="canonical" href="{{ currentUrl }}">
@@ -18,8 +20,14 @@
   <meta property="og:description" content="{{ pageDesc }}">
 {%- endif %}
 {% if socialImage %}  
-  <meta property="og:image" content="{{ socialImage }}">
-  <meta name="twitter:image" content="{{ socialImage }}">
+  <meta property="og:image" content="{{ site.url }}{% image socialImage, {
+    widths: [1200],
+    tag: false
+  } %}">
+  <meta name="twitter:image" content="{{ site.url }}{% image socialImage, {
+    widths: [1200],
+    tag: false
+  } %}">
   <meta property="og:image:alt" content="Page image for {{ site.name }}">
   <meta name="twitter:image:alt" content="Page image for {{ site.name }}">
 {% endif %}

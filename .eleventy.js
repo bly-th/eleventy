@@ -5,6 +5,9 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 // Import filters
 const cssMinFilter = require('./src/filters/css-min.js');
 
+// Import shortcodes
+const imageShortcode = require('./src/shortcodes/image.js');
+
 module.exports = (eleventyConfig) => {
   // Add plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -12,6 +15,9 @@ module.exports = (eleventyConfig) => {
 
   // Add filters
   eleventyConfig.addFilter('cssmin', cssMinFilter);
+
+  // Add shortcodes
+  eleventyConfig.addShortcode('image', imageShortcode);
 
   // Pass through
   eleventyConfig.addPassthroughCopy('./src/img/');

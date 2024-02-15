@@ -47,20 +47,8 @@
   --leading-loose: 2
 }
 
-.block {
-  display: block
-}
-
-.flex {
-  display: flex
-}
-
-.grid {
-  display: grid
-}
-
-.flex-wrap {
-  flex-wrap: wrap
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
 .text-primary {
