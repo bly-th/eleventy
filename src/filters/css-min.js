@@ -1,5 +1,5 @@
 const CleanCSS = require('clean-css');
 
-module.exports = function cssMin(code) {
+module.exports = (code) => {
   return new CleanCSS({}).minify(code).styles;
 };
