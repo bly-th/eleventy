@@ -19,7 +19,7 @@
   --text-700: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
   --text-800: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem);
   --text-900: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem);
-  --font-sans: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-sans: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   --font-serif: ui-serif,Georgia,Cambria,"Times New Roman",Times,serif;
   --font-mono: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
   --font-thin: 100;
@@ -45,10 +45,6 @@
   --leading-normal: 1.5;
   --leading-relaxed: 1.625;
   --leading-loose: 2
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
 .text-primary {
