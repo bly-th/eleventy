@@ -73,3 +73,12 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* Allow adding a border to an element by just adding a border-width. */
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
