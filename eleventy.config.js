@@ -1,15 +1,15 @@
 // Import plugins
-const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
-const pluginRss = require('@11ty/eleventy-plugin-rss');
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
+import pluginRss from '@11ty/eleventy-plugin-rss';
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 // Import filters
-const cssMinFilter = require('./src/filters/css-min.js');
+import cssMinFilter from './src/filters/css-min.js';
 
 // Import shortcodes
-const imageShortcode = require('./src/shortcodes/image.js');
+import imageShortcode from './src/shortcodes/image.js';
 
-module.exports = (eleventyConfig) => {
+export default async function(eleventyConfig) {
   // Add plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginRss);
@@ -55,10 +55,9 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('./src/robots.txt');
 
   return {
-    dir: {
-      input: 'src',
-      output: '_site',
-    },
-    passthroughFileCopy: true,
+		dir: {
+			input: "src",
+			output: "_site"
+		}
   };
 };

@@ -1,6 +1,6 @@
-const Image = require('@11ty/eleventy-img');
+import Image from '@11ty/eleventy-img';
 
-module.exports = async function imageShortcode(src, opts = {}) {
+export default async function imageShortcode(src, opts = {}) {
   const defaults = {
     alt: "",
     tag: true,
@@ -8,7 +8,7 @@ module.exports = async function imageShortcode(src, opts = {}) {
     widths: [null],
     sizes: "(min-width: 30em) 50vw, 100vw",
     loading: "lazy"
-  }
+  };
 
   const config = { ...defaults, ...opts };
   
@@ -25,7 +25,7 @@ module.exports = async function imageShortcode(src, opts = {}) {
     }
   };
 
-  let imageAttributes = {
+  const imageAttributes = {
     alt: config.alt,
     loading: config.loading,
     decoding: 'async',
@@ -33,12 +33,12 @@ module.exports = async function imageShortcode(src, opts = {}) {
     class: config.classes,
   };
 
-  let metadata = await Image(`src${src}`, options);
+  const metadata = await Image(`src${src}`, options);
 
   if (config.tag) {
-    // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+    // Generate HTML with image metadata
     return Image.generateHTML(metadata, imageAttributes);
   }
 
   return metadata.jpeg.map((entry) => entry.url);
-};
+}

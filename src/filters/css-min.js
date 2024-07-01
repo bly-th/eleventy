@@ -1,5 +1,5 @@
-const CleanCSS = require('clean-css');
+import CleanCSS from 'clean-css';
 
-module.exports = (code) => {
+export default (code) => {
   return new CleanCSS({}).minify(code).styles;
 };

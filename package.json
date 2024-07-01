@@ -16,6 +16,7 @@
     "utilityOutputPath": "src/_includes/css/utility",
     "compositionOutputPath": "src/_includes/css/composition"
   },
+  "type": "module",
   "author": "Ryan Gittings",
   "license": "GPL-2.0 AND MIT",
   "homepage": "https://github.com/bly-th/eleventy",
