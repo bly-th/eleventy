@@ -1,7 +1,7 @@
 // Import plugins
 import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
 import pluginRss from '@11ty/eleventy-plugin-rss';
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 
 // Import filters
 import cssMinFilter from './src/filters/css-min.js';
@@ -15,20 +15,20 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		// optional, output image formats
-		formats: ["webp", "jpeg", "svg"],
+		formats: ['webp', 'jpeg', 'svg'],
     urlPath: '/img/built/',
     outputDir: '_site/img/built',
     svgShortCircuit: true,
     fixOrientation: true,
-    svgCompressionSize: "br",
+    svgCompressionSize: 'br',
     cacheOptions: {
-      duration: "*",
-      directory: ".cache",
+      duration: '*',
+      directory: '.cache',
       removeUrlQueryParams: false,
     },
 		defaultAttributes: {
-			loading: "lazy",
-      decoding: "async",
+			loading: 'lazy',
+      decoding: 'async',
       sizes: '(min-width: 30em) 50vw, 100vw',
       class: 'w-full h-auto'
 		},
@@ -56,8 +56,8 @@ export default async function(eleventyConfig) {
 
   return {
 		dir: {
-			input: "src",
-			output: "_site"
+			input: 'src',
+			output: '_site'
 		}
   };
 };
