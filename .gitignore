@@ -27,3 +27,6 @@ test/stubs-layout-cache/_includes/*.js
 
 # Ignore unwanted Mac files
 .DS_Store
+
+# env file
+.env
