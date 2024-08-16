@@ -6,5 +6,5 @@
 }
 
 .wrapper>* {
-  grid-column: var(--wrapper-column, wrapper);
+  grid-column: wrapper;
 }
