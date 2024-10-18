@@ -41,6 +41,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addShortcode('image', imageShortcode);
 
   // Pass through
+  eleventyConfig.addPassthroughCopy('./src/_redirects');
   eleventyConfig.addPassthroughCopy('./src/img/');
   eleventyConfig.addPassthroughCopy('./src/fonts/');
   eleventyConfig.addPassthroughCopy('./src/js/');
