@@ -8,7 +8,7 @@ sitemapIgnore: true
   {% if item.data.sitemapIgnore !== true and item.url %}
     <url>
       <loc>{{ site.url }}{{ item.url }}</loc>
-      <lastmod>{{ item.date | rssDate }}</lastmod>
+      <lastmod>{{ item.date | dateToRfc3339 }}</lastmod>
       <changefreq>{{ item.data.sitemapChangefreq or "monthly" }}</changefreq>
       <priority>{{ item.data.sitemapPriority or 0.5 }}</priority>
     </url>
