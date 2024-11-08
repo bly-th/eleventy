@@ -1,5 +1,4 @@
 const tailwindCSSVariables = require('@bly-th/tailwind-css-variables');
-const tailwindCustomUtilities = require('@bly-th/tailwind-custom-utilities');
 
 module.exports = {
   content: ["./_site/**/*.html"],
@@ -55,12 +54,6 @@ module.exports = {
       fontFamily: 'font',
       fontWeight: 'font',
       lineHeight: 'leading',
-    }),
-    tailwindCustomUtilities({
-      spacing: {
-        name: 'flow-space',
-        property: '--flow-space',
-      },
     })
   ]
 };
