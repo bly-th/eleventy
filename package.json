@@ -13,8 +13,7 @@
     "production": "npx eleventy"
   },
   "blyth": {
-    "utilityOutputPath": "src/_includes/css/utility",
-    "compositionOutputPath": "src/_includes/css/composition"
+    "utilityOutputPath": "src/_includes/css/utility"
   },
   "type": "module",
   "author": "Ryan Gittings",
