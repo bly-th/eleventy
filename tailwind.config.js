@@ -42,7 +42,8 @@ module.exports = {
       600: 'clamp(2.00rem, calc(1.61rem + 1.95vw), 3.00rem)',
       700: 'clamp(2.63rem, calc(1.89rem + 3.66vw), 4.50rem)',
       800: 'clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)',
-      900: 'clamp(5.25rem, calc(3.79rem + 7.32vw), 9.00rem)'
+      900: 'clamp(5.25rem, calc(3.79rem + 7.32vw), 9.00rem)',
+      'xs-2xl': 'clamp(1rem, -0.9512rem + 9.7561vw, 6rem)'
     }
   },
   plugins: [
