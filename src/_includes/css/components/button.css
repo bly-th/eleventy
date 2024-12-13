@@ -1,0 +1,17 @@
+.button {
+  display: inline-flex;
+  padding: 0.75em 1em;
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  color: var(--color-light);
+  text-decoration: none;
+  line-height: var(--leading-none);
+  font-weight: var(--font-normal);
+  border-radius: var(--rounded-md);
+  transition: .2s var(--transition-default);
+}
+
+.button:hover {
+  background: var(--color-light);
+  color: var(--color-primary);
+}

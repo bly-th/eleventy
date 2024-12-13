@@ -10,10 +10,9 @@ module.exports = {
   },
   theme: {
     colors: {
-      primary: '#ff5400',
-      secondary: '#86c7f0',
-      light: '#f3f3f3',
-      dark: '#252525'
+      primary: '#014550',
+      light: '#fff',
+      dark: '#000'
     },
     fontSize: {
       /* @link https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
@@ -55,6 +54,8 @@ module.exports = {
       fontFamily: 'font',
       fontWeight: 'font',
       lineHeight: 'leading',
+      borderRadius: 'rounded',
+      transitionTimingFunction: 'transition'
     })
   ]
 };
