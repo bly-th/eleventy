@@ -5,6 +5,7 @@ import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 
 // Import filters
 import cssMinFilter from './src/filters/css-min.js';
+import markdownFilter from './src/filters/markdown.js';
 
 // Import shortcodes
 import imageShortcode from './src/shortcodes/image.js';
@@ -36,6 +37,7 @@ export default async function(eleventyConfig) {
 
   // Add filters
   eleventyConfig.addFilter('cssmin', cssMinFilter);
+  eleventyConfig.addFilter('markdown', markdownFilter);
 
   // Add shortcodes
   eleventyConfig.addShortcode('image', imageShortcode);
