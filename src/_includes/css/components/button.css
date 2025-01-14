@@ -6,9 +6,9 @@
   color: var(--color-light);
   text-decoration: none;
   line-height: var(--leading-none);
-  font-weight: var(--font-normal);
-  border-radius: var(--rounded-md);
-  transition: .2s var(--transition-default);
+  font-weight: var(--font-weight-normal);
+  border-radius: var(--radius-md);
+  transition: .2s var(--ease-default);
   cursor: pointer;
 }
 
