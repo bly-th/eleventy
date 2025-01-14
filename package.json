@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "npm-run-all -p dev:*",
-    "dev:css": "NODE_ENV=production npx tailwindcss -i src/_includes/css/app.css -o src/css/main.css --watch",
+    "dev:css": "NODE_ENV=production npx @tailwindcss/cli -i src/_includes/css/app.css -o src/css/main.css --watch",
     "dev:11ty": "eleventy --serve --incremental",
     "production": "npx eleventy"
   },
@@ -29,5 +29,8 @@
     "clean-css": "^5.3.3",
     "npm-run-all": "^2.1.0",
     "tailwindcss": "^4.0.0-beta.9"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.0-beta.9"
   }
 }
