@@ -169,7 +169,7 @@
   .wrapper {
     display: grid;
     grid-template-columns: [full-start] 1fr [wrapper-start] minmax(0, 89rem) [wrapper-end] 1fr [full-end];
-    gap: 0 var(--size-xs-2xl);
+    gap: 0 var(--spacing-xs-2xl);
     margin: 0 auto;
   }
   .wrapper>* {
