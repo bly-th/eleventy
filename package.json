@@ -28,6 +28,6 @@
     "@tailwindcss/cli": "^4.0.0-beta.9",
     "clean-css": "^5.3.3",
     "npm-run-all": "^2.1.0",
-    "tailwindcss": "^4.0.0-beta.9"
+    "tailwindcss": "^4.0.0"
   }
 }
