@@ -139,7 +139,7 @@
   a:not([class]) {
     text-decoration-skip-ink: auto;
   }
-  img, picture {
+  img, picture, svg {
     max-width: 100%;
     height: auto;
     display: block;

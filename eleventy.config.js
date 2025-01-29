@@ -21,6 +21,7 @@ export default async function(eleventyConfig) {
     outputDir: '_site/img/built',
     svgShortCircuit: true,
     fixOrientation: true,
+    failOnError: false,
     svgCompressionSize: 'br',
     cacheOptions: {
       duration: '*',
