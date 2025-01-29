@@ -11,7 +11,7 @@ export default async function imageShortcode(src, opts = {}) {
   };
 
   const config = { ...defaults, ...opts };
-  
+
   const options = {
     widths: config.widths || [null],
     formats: ['webp', 'jpg', 'svg'],
@@ -40,5 +40,6 @@ export default async function imageShortcode(src, opts = {}) {
     return Image.generateHTML(metadata, imageAttributes);
   }
 
-  return metadata.jpeg.map((entry) => entry.url);
+  const firstKey = Object.keys(metadata)[0]; // Get the first key dynamically
+  return metadata[firstKey].map((entry) => entry.url);
 }
