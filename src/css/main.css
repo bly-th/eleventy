@@ -133,7 +133,7 @@
   }
   body {
     min-height: 100vh;
-    text-rendering: optimizeSpeed;
+    text-rendering: geometricPrecision;
     line-height: 1.5;
   }
   a:not([class]) {
@@ -141,6 +141,7 @@
   }
   img, picture {
     max-width: 100%;
+    height: auto;
     display: block;
   }
   input, button, textarea, select {
