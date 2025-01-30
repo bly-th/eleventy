@@ -4,7 +4,6 @@ import pluginRss from '@11ty/eleventy-plugin-rss';
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 
 // Import filters
-import cssMinFilter from './src/filters/css-min.js';
 import markdownFilter from './src/filters/markdown.js';
 
 // Import shortcodes
@@ -37,7 +36,6 @@ export default async function(eleventyConfig) {
 	});
 
   // Add filters
-  eleventyConfig.addFilter('cssmin', cssMinFilter);
   eleventyConfig.addFilter('markdown', markdownFilter);
 
   // Add shortcodes
