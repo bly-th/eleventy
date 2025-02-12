@@ -13,7 +13,7 @@
 
 @theme {
   --*: initial;
-  
+
   --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
   --font-mono: ui-monospacing, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospacing;
@@ -21,7 +21,7 @@
   --color-primary: #014550;
   --color-light: #fff;
   --color-dark: #000;
-  
+
   /* @link https://utopia.fyi/space/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
   --spacing-3xs: clamp(0.3125rem, 0.2881rem + 0.122vw, 0.375rem);
   --spacing-2xs: clamp(0.6875rem, 0.6631rem + 0.122vw, 0.75rem);
@@ -33,7 +33,7 @@
   --spacing-2xl: clamp(5.25rem, 4.9573rem + 1.4634vw, 6rem);
   --spacing-3xl: clamp(7.875rem, 7.436rem + 2.1951vw, 9rem);
   --spacing-xs-2xl: clamp(1rem, -0.9512rem + 9.7561vw, 6rem);
-  
+
   /* @link https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
   --text--2: clamp(0.9115rem, 0.8925rem + 0.0947vw, 0.96rem);
   --text--1: clamp(1.0938rem, 1.0523rem + 0.2073vw, 1.2rem);
