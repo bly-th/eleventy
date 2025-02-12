@@ -1,0 +1,7 @@
+---
+layout: 'layouts/default.njk'
+---
+
+{% asyncEach block in blocks %}
+  {% include '../partials/blocks/' + block.type + '.njk' %}
+{% endeach %}
