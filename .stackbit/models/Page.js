@@ -12,6 +12,12 @@ export const Page = {
             required: true
         },
         {
+            type: 'string',
+            name: 'layout',
+            default: 'layouts/page.njk',
+            hidden: true
+        },
+        {
             type: 'list',
             name: 'blocks',
             items: { type: 'model', models: [], groups: ['SectionComponents'] }
