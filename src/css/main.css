@@ -59,6 +59,9 @@
   }
 }
 @layer utilities {
+  .static {
+    position: static;
+  }
   .block {
     display: block;
   }
@@ -90,6 +93,9 @@
   }
   .py-l {
     padding-block: var(--spacing-l);
+  }
+  .text-wrap {
+    text-wrap: wrap;
   }
   .text-primary {
     color: var(--color-primary);
@@ -156,6 +162,7 @@
     }
   }
   p, h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
     overflow-wrap: break-word;
   }
   *, ::before, ::after {

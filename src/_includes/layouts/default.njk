@@ -1,17 +1,17 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {%- include 'partials/meta.njk' -%}
-    <script>document.documentElement.classList.remove('no-js');</script>
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
 
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body>
-    <main>
-      {{ content | safe }}
-    </main>
+  <body data-sb-object-id="{{ page.inputPath | replace('./', '') }}">
+    <main>{{ content | safe }}</main>
   </body>
 </html>

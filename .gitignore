@@ -30,3 +30,7 @@ test/stubs-layout-cache/_includes/*.js
 
 # env file
 .env
+
+# stackbit
+.cache
+.stackbit/cache
