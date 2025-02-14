@@ -62,11 +62,32 @@
   .static {
     position: static;
   }
+  .container {
+    width: 100%;
+    @media (width >= 1536p) {
+      max-width: 1536p;
+    }
+    @media (width >= 640px) {
+      max-width: 640px;
+    }
+    @media (width >= 768px) {
+      max-width: 768px;
+    }
+    @media (width >= 1024px) {
+      max-width: 1024px;
+    }
+    @media (width >= 1280px) {
+      max-width: 1280px;
+    }
+  }
   .block {
     display: block;
   }
   .grid {
     display: grid;
+  }
+  .hidden {
+    display: none;
   }
   .inline-flex {
     display: inline-flex;

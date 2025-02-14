@@ -6,8 +6,8 @@ blocks:
   - type: hero
     title: Welcome
     content: |
-      Welcome to Blyth Eleventy - built by Gittings Studio!
+      Welcome to Blyth Eleventy - built by Gittings Studio.
     button:
-      text: Visit Site
+      text: Visit Website
       url: 'https://gittings.studio'
 ---
