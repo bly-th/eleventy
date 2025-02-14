@@ -36,8 +36,8 @@ export default sbConfig = {
       models: [Page, SiteConfig, HeroBlock, Button],
       assetsConfig: {
         referenceType: "static",
-        staticDir: "src/uploads",
-        uploadDir: "images",
+        staticDir: "src",
+        uploadDir: "uploads",
         publicPath: "/",
       },
     }),
