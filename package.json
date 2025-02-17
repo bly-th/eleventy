@@ -10,7 +10,6 @@
     "dev": "npm-run-all -p dev:*",
     "dev:css": "NODE_ENV=production npx @tailwindcss/cli -i src/_includes/css/app.css -o src/css/main.css --watch",
     "dev:11ty": "eleventy --serve --incremental",
-    "cms": "stackbit dev --port=8080",
     "production": "npx eleventy"
   },
   "blyth": {
@@ -26,9 +25,6 @@
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@bly-th/css": "^1.0.5",
-    "@stackbit/cms-core": "^3.1.21",
-    "@stackbit/cms-git": "1.0.28",
-    "@stackbit/types": "^2.1.9",
     "@tailwindcss/cli": "^4.0.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.5.0",
