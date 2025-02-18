@@ -3,7 +3,7 @@ layout: 'layouts/default.njk'
 ---
 
 {% asyncEach block in blocks %}
-  <div data-sb-field-path="blocks.{{ loop.index0 }}">
+  <div>
     {% include '../partials/blocks/' + block.type + '.njk' %}
   </div>
 {% endeach %}

@@ -1,9 +1,9 @@
 <section class="py-l">
   <div class="wrapper">
     <div class="space-y-3xs">
-      <h1 class="text-primary lg:font-bold" data-sb-field-path=".title">{{ block.title }}</h1>
+      <h1 class="text-primary lg:font-bold">{{ block.title }}</h1>
       <div data-sb-field-path=".content">{{ block.content | markdown | safe }}</div>
-      <a href="{{ block.button.link }}" class="button" target="_blank" data-sb-field-path=".button.text">{{ block.button.text }}</a>
+      <a href="{{ block.button.link }}" class="button" target="_blank">{{ block.button.text }}</a>
     </div>
   </div>
 </section>
