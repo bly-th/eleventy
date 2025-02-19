@@ -30,8 +30,7 @@ export default async function(eleventyConfig) {
 		defaultAttributes: {
 			loading: 'lazy',
       decoding: 'async',
-      sizes: '(min-width: 30em) 50vw, 100vw',
-      class: 'w-full h-auto'
+      sizes: '(min-width: 30em) 50vw, 100vw'
 		},
 	});
 
