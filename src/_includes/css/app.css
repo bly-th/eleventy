@@ -2,6 +2,7 @@
 @import "tailwindcss/theme" layer(theme);
 @import "tailwindcss/utilities" layer(utilities);
 
+@import "./utility/breakout-button.css" layer(base);
 @import "./utility/reset.css" layer(base);
 @import "./utility/wrapper.css" layer(base);
 
