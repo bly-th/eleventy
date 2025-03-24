@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="space-y-3xs">
       <h1 class="text-primary lg:font-bold">{{ block.title }}</h1>
-      <div data-sb-field-path=".content">{{ block.content | markdown | safe }}</div>
+      {{ block.content | markdown | safe }}
       <a href="{{ block.button.link }}" class="button" target="_blank">{{ block.button.text }}</a>
     </div>
   </div>
