@@ -4,9 +4,6 @@ package/generated*
 # Ignore installed npm modules
 node_modules/
 
-# Ignore npm package lock file
-package-lock.json
-
 # Ignore build tool output, e.g. code coverage
 .nyc_output/
 coverage/
