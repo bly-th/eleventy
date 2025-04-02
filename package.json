@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "npm-run-all -p dev:*",
-    "dev:css": "NODE_ENV=production npx @tailwindcss/cli -i src/_includes/css/app.css -o src/css/main.css --watch",
+    "dev:css": "NODE_ENV=production npx @tailwindcss/cli -i src/_includes/css/app.css -o src/css/main.css --watch --minify",
     "dev:11ty": "eleventy --serve --incremental",
     "production": "npx eleventy"
   },
