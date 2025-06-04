@@ -3,7 +3,5 @@ layout: 'layouts/default.njk'
 ---
 
 {% asyncEach block in blocks %}
-  <div>
-    {% include '../partials/blocks/' + block.type + '.njk' %}
-  </div>
+  {% include '../partials/blocks/' + block.type + '.njk' %}
 {% endeach %}
