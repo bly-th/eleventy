@@ -35,3 +35,7 @@ h5 {
 a {
   color: currentColor;
 }
+
+a:not(.button):hover {
+  opacity: 0.6;
+}
