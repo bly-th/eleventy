@@ -18,7 +18,7 @@ select {
   width: 100%;
   border: none;
   padding: 0.5em;
-  border-radius: var(--radius-md);
+  border-radius: var(--rounded-md);
   appearance: none;
 }
 
@@ -26,7 +26,6 @@ label,
 legend {
   display: block;
   width: 100%;
-  font-size: var(--text-300);
 }
 
 fieldset {
